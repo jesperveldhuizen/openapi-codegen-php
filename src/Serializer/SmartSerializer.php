@@ -78,7 +78,7 @@ class SmartSerializer implements SerializerInterface
     public function deserialize($data, $headers): array
     {
         if (true === isset($headers['content_type']) && false === strpos($headers['content_type'], 'json')) {
-            return $data;
+            return [$data];
         }
 
         return $this->decode($data);
@@ -113,7 +113,7 @@ class SmartSerializer implements SerializerInterface
     private function decode($data): array
     {
         if (null === $data || 0 === strlen($data)) {
-            return '';
+            return [];
         }
 
         $result = @json_decode($data, true);

@@ -57,7 +57,7 @@ class ResponseSerializationHandler
      *
      * @return array
      */
-    public function __invoke($request): array
+    public function __invoke($request)
     {
         $handler = $this->handler;
 

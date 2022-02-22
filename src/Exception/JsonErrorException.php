@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Elastic\OpenApi\Codegen\Exception;
 
-use function InvalidArgumentException;
+use InvalidArgumentException;
 
 /**
  * JSON error handling providing human friendly messages.
@@ -73,7 +73,7 @@ class JsonErrorException extends \Exception implements ClientException
      *
      * @return mixed
      */
-    public function getInput(): mixed
+    public function getInput()
     {
         return $this->input;
     }
@@ -83,7 +83,7 @@ class JsonErrorException extends \Exception implements ClientException
      *
      * @return mixed
      */
-    public function getResult(): mixed
+    public function getResult()
     {
         return $this->result;
     }

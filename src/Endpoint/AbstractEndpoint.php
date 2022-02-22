@@ -76,7 +76,7 @@ abstract class AbstractEndpoint implements EndpointInterface
     /**
      * {@inheritdoc}
      */
-    public function getParams()
+    public function getParams(): ?array
     {
         $params = [];
 
@@ -92,7 +92,7 @@ abstract class AbstractEndpoint implements EndpointInterface
     /**
      * {@inheritdoc}
      */
-    public function getBody()
+    public function getBody(): ?array
     {
         return $this->body;
     }
