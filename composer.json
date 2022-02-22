@@ -33,13 +33,10 @@
   },
   "autoload": {
     "psr-4": {
-      "Elastic\\OpenApi\\Codegen\\": ""
+      "Elastic\\OpenApi\\Codegen\\": "src/"
     },
     "exclude-from-classmap": [
       "/Tests/"
     ]
-  },
-  "bin": [
-    "resources/dev/elastic-openapi-codegen.sh"
-  ]
+  }
 }
