@@ -54,7 +54,7 @@ abstract class AbstractEndpoint implements EndpointInterface
     /**
      * {@inheritdoc}
      */
-    public function getMethod()
+    public function getMethod(): string
     {
         return $this->method;
     }
@@ -62,7 +62,7 @@ abstract class AbstractEndpoint implements EndpointInterface
     /**
      * {@inheritdoc}
      */
-    public function getURI()
+    public function getURI(): string
     {
         $uri = $this->uri;
 
