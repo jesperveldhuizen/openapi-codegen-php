@@ -1,22 +1,29 @@
 {
-  "name" : "elastic/openapi-codegen",
-  "description" : "A base library used to create Elastic PHP clients.",
+  "name": "fieldhousen/openapi-codegen",
+  "description": "A base library used to create Elastic PHP clients.",
   "homepage": "https://github.com/elastic/openapi-codegen-php",
-  "keywords" : [
+  "keywords": [
     "search",
     "client",
     "elastic",
     "openapi"
   ],
-  "license" : "Apache-2.0",
-  "type" : "library",
-  "authors" : [
-    {"name" : "Aurélien FOUCRET", "email": "aurelien.foucret@elastic.co"}
+  "license": "Apache-2.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Aurélien FOUCRET",
+      "email": "aurelien.foucret@elastic.co"
+    },
+    {
+      "name": "Jesper Veldhuizen",
+      "email": "info@jesperveldhuizen.com"
+    }
   ],
-  "require" : {
-    "php" : "^7.4|^8.0",
-    "guzzlehttp/ringphp" : "^1.0",
-    "psr/log" : "^1.0."
+  "require": {
+    "php": "^7.4|^8.0",
+    "guzzlehttp/ringphp": "^1.0",
+    "psr/log": "^1.0"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "2.18.*",
@@ -24,15 +31,15 @@
     "symplify/easy-coding-standard": "9.2.*",
     "symplify/symplify-kernel": "9.2.*"
   },
-  "autoload" : {
-    "psr-4" : {
-      "Elastic\\OpenApi\\Codegen\\" : ""
+  "autoload": {
+    "psr-4": {
+      "Elastic\\OpenApi\\Codegen\\": ""
     },
-    "exclude-from-classmap" : [
+    "exclude-from-classmap": [
       "/Tests/"
     ]
   },
   "bin": [
-      "resources/dev/elastic-openapi-codegen.sh"
+    "resources/dev/elastic-openapi-codegen.sh"
   ]
 }
